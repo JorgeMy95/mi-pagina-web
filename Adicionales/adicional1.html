@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Adicional 1</title>
+
+    <style>
+body {
+    background: url('bgad1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-section {
+    padding: 20px;
+    background: url('bgad1.jpg') no-repeat center center fixed;
+    text-align: center;
+}
+
+.main-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; 
+}
+
+.carousel {
+    overflow: hidden; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.carousel-images {
+    display: flex; 
+    gap: 10px; 
+    transition: transform 0.5s ease; 
+}
+
+.carousel-images img {
+    max-width: 100%;
+    max-height: 300px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.receta {
+    display: flex;
+    gap: 20px;
+    background-color: #fdf7e3;
+    padding: 20px;
+    border: 2px solid #d9b85a;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.receta-contenido {
+    flex: 2;
+}
+
+.receta-contenido h3 {
+    color: #d95c5c;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.receta-contenido h4 {
+    color: #555;
+    margin-top: 20px;
+}
+
+.receta-contenido ul, .receta-contenido ol {
+    margin-left: 20px;
+}
+
+.receta-contenido li {
+    margin: 5px 0;
+}
+
+.receta-imagenes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.receta-imagenes img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+#seccion1 {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#seccion1 video {
+    width: 80%;
+    border-radius: 10px;
+}
+#seccion2 {
+    padding: 20px;
+    background: url('background2.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Recetas Rapidas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#seccion1">Receta 1</a></li>
+                <li><a href="#seccion2">Receta 2</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <h2>¡Bienvenidos a nuestra página de Reccetas!</h2>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="C:\Users\jorge\OneDrive\Escritorio\Proyecto\Adicionales\R1.jpg" alt="Imagen 1">
+                <img src="C:\Users\jorge\OneDrive\Escritorio\Proyecto\Adicionales\R2.jpg" alt="Imagen 2">
+                <img src="C:\Users\jorge\OneDrive\Escritorio\Proyecto\Adicionales\R3.jpg" alt="Imagen 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion1">
+        <h2>Video de Presentación</h2>
+        <iframe 
+        src="https://www.youtube.com/embed/o5Gm1ZmSfvE"
+        title="Video de Parrilla Argentina" 
+        style="width: 100%; height: 500px;" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+        <div class="receta">
+            <div class="receta-contenido">
+                <h3>Receta de Parrilla Argentina</h3>
+                <p>¡Preparáte para disfrutar de una deliciosa parrillada a la argentina! La combinación de sabores y tradición hacen de esta receta un imprescindible para cualquier amante de la buena comida.</p>
+                <p>Con esta receta, podrás sorprender a tus comensales con un plato típico de Argentina, ideal para cualquier ocasión al aire libre. Sigue estos simples pasos y disfruta de una experiencia culinaria inolvidable.</p>
+                <ul>
+                    <li><strong>Número de comensales:</strong> 4 personas</li>
+                    <li><strong>Dificultad:</strong> Fácil</li>
+                    <li><strong>Tiempo estimado de preparación:</strong> 30 minutos</li>
+                </ul>
+                <h4>Ingredientes</h4>
+                <ul>
+                    <li>1 kilo de carne de res en corte especial para parrilla</li>
+                    <li>Sal y pimienta al gusto</li>
+                    <li>500 gramos de chorizos criollos</li>
+                    <li>2 pimientos rojos</li>
+                    <li>2 cebollas</li>
+                    <li>3 zapallitos</li>
+                </ul>
+                <h4>Pasos para la preparación</h4>
+                <ol>
+                    <li>Preparar la parrilla y asegurarse de que esté bien caliente.</li>
+                    <li>Sazonar la carne con sal y pimienta al gusto.</li>
+                    <li>Cortar las verduras en rodajas para asar junto con la carne.</li>
+                    <li>Cocinar la carne y los chorizos en la parrilla hasta que estén al punto deseado.</li>
+                    <li>Agregar las verduras a la parrilla y cocinar hasta que estén tiernas.</li>
+                    <li>Servir los alimentos recién cocinados y disfrutar en buena compañía.</li>
+                </ol>
+            </div>
+            <div class="receta-imagenes">
+                <img src="C:\Users\jorge\OneDrive\Escritorio\Proyecto\Adicionales\img\OIP.JPG" alt="Parrilla lista para asar">
+                <img src="C:\Users\jorge\OneDrive\Escritorio\Proyecto\Adicionales\img\R.JPG" alt="Plato servido de parrillada argentina">
+            </div>
+        </div>
+    </section>
+    
+    <section id="seccion2">
+        <h2>Información Adicional</h2>
+        <p>Esta es una sección para más detalles sobre el contenido de tu página.</p>
+
+        <div class="receta">
+            <div class="receta-contenido">
+                <h3>Receta de Parrilla Argentina</h3>
+                <p>¡Preparáte para disfrutar de una deliciosa parrillada a la argentina! La combinación de sabores y tradición hacen de esta receta un imprescindible para cualquier amante de la buena comida.</p>
+                <p>Con esta receta, podrás sorprender a tus comensales con un plato típico de Argentina, ideal para cualquier ocasión al aire libre. Sigue estos simples pasos y disfruta de una experiencia culinaria inolvidable.</p>
+                <ul>
+                    <li><strong>Número de comensales:</strong> 4 personas</li>
+                    <li><strong>Dificultad:</strong> Fácil</li>
+                    <li><strong>Tiempo estimado de preparación:</strong> 30 minutos</li>
+                </ul>
+                <h4>Ingredientes</h4>
+                <ul>
+                    <li>1 kilo de carne de res en corte especial para parrilla</li>
+                    <li>Sal y pimienta al gusto</li>
+                    <li>500 gramos de chorizos criollos</li>
+                    <li>2 pimientos rojos</li>
+                    <li>2 cebollas</li>
+                    <li>3 zapallitos</li>
+                </ul>
+                <h4>Pasos para la preparación</h4>
+                <ol>
+                    <li>Preparar la parrilla y asegurarse de que esté bien caliente.</li>
+                    <li>Sazonar la carne con sal y pimienta al gusto.</li>
+                    <li>Cortar las verduras en rodajas para asar junto con la carne.</li>
+                    <li>Cocinar la carne y los chorizos en la parrilla hasta que estén al punto deseado.</li>
+                    <li>Agregar las verduras a la parrilla y cocinar hasta que estén tiernas.</li>
+                    <li>Servir los alimentos recién cocinados y disfrutar en buena compañía.</li>
+                </ol>
+            </div>
+            <div class="receta-imagenes">
+                <img src="C:\Users\jorge\OneDrive\Escritorio\Proyecto\Adicionales\img\OIP.JPG" alt="Parrilla lista para asar">
+                <img src="parrilla2.jpg" alt="Plato servido de parrillada argentina">
+            </div>
+        </div>
+    
+    <footer>
+        <p>© 2024 Todo Recetas - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
